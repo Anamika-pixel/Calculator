@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input id="output" type="text" class="textfield" placeholder="0" disabled>
+        <div class="btns">
+            <button class="btn" id="off" onclick="off()">OFF</button>
+            <button class="btn" id="ac" onclick="clearAll()">AC</button>
+            <button class="btn" id="del" onclick="deleteoneItem()">DEL</button>
+            <button class="btn operator" onclick="displayContent('/')">/</button>
+            <button class="btn" onclick="displayContent('7')">7</button>
+            <button class="btn" onclick="displayContent('8')">8</button>
+            <button class="btn" onclick="displayContent('9')">9</button>
+            <button class="btn operator" onclick="displayContent('*')">*</button>
+            <button class="btn" onclick="displayContent('4')">4</button>
+            <button class="btn" onclick="displayContent('5')">5</button>
+            <button class="btn" onclick="displayContent('6')">6</button>
+            <button class="btn operator" onclick="displayContent('-')">-</button>
+            <button class="btn" onclick="displayContent('1')">1</button>
+            <button class="btn" onclick="displayContent('2')">2</button>
+            <button class="btn" onclick="displayContent('3')">3</button>
+            <button class="btn operator" onclick="displayContent('+')">+</button>
+            <button class="btn" onclick="displayContent('0')">0</button>
+            <button class="btn" onclick="displayContent('00')">00</button>
+            <button class="btn" onclick="displayContent('.')">.</button>
+            <button class="btn operator" onclick="showResult()">=</button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
